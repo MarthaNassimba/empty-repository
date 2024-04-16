@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risha Nature $ Wildlife Tours</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header {
+            background: linear-gradient(to right, #4caf50, #2e7d32);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        button {
+            background-color: #4caf50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #2e7d32;
+            box-shadow: 5px 5px 5px 5px rgba(42, 238, 3, 0.2);
+        }
+
+        footer {
+            background: linear-gradient(to right,#2e7d32, #4caf50);
+            padding: 20px;
+            text-align: center;
+        }
+
+        
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Risha Nature & Wildlife Tours </h1>
+        <p>Explore the wonders of nature with us!</p>
+    </header>
+
+    <main>
+        <div >
+            <h2>About Us</h2>
+            <p>We are passionate about nature and wildlife.
+            </br> Our tours offer you the opportunity to experience the
+                beauty of the natural world up close.</p>
+        </div>
+        <div>
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/117/950/original/gorilla.jpg?1709807639" width="500px" />
+            <p>Embark on a journey to witness breathtaking landscapes, majestic animals, and serene environments.</p>
+        </div>
+        <div>
+            <h2>Plan Your Adventure</h2>
+            <em>
+                <p>Ready to start your adventure?</p>
+            </em>
+            <button >Start Now</button>
+        </div>
+    </main>
+
+    <footer>
+        <strong>
+            <p>
+            <span>Contact us for more information:<hr/></span>  <span><a href="mailto:marthanassimba@gmail.com">
+                marthanassimba@gmail.com</a></span> ||<span>  +256 750615389 </span>
+            </p>
+        </strong>
+        
+    </footer>
+
+    <script >
+
+        function startAdventure(){
+            let name = prompt("Enter your name to start the adventure:");
+            
+            if (name) {
+                alert(`Welcome, ${name}! Get ready to explore the wonders of nature with us.`);
+            } else {
+                alert("Please enter your name to start the adventure.");
+            }
+        }
+
+        let startButton = document.querySelector("button");
+        startButton.addEventListener("click", startAdventure);
+
+    </script>
+</body>
+
+</html>
+

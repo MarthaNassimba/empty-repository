@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tram Technologies</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+        color: #fff;
+    }
+    #header {
+        text-align: center;
+        padding: 50px;
+    }
+    h1 {
+        font-size: 3em;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    h2 {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    p {
+        font-size: 1.1em;
+        line-height: 1.6;
+    }
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background: #fff;
+        color: #4682B4;
+        border: none;
+        border-radius: 5px;
+        font-size: 1em;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    .btn:hover {
+        background: #4682B4;
+        color: #fff;
+    }
+</style>
+</head>
+<body>
+    <div id="header">
+        <h1>Tram Technologies</h1>
+        <h2>Empowering Women in Technology</h2>
+        <p>Welcome to Tram Technologies, a community dedicated to empowering women in the field of technology. We believe in the power of women in tech and aim to provide resources, support, and networking opportunities for women passionate about ICT and technology.</p>
+        <img src="images/programmer2.jpg" />
+        <button class="btn" onclick="joinCommunity()">Join Us</button>
+    </div>
+    <div class="container">
+        <h2>About Us</h2>
+        <p>Tram Technologies was founded by Martha Nassimba, a passionate advocate for women in technology. With years of experience in the industry, Martha recognized the need for a supportive community where women could thrive and excel in tech-related fields.</p>
+        <p>Our mission is to bridge the gender gap in technology by providing mentorship programs, workshops, and networking events tailored to the needs of women. We believe that by empowering women in tech, we can create a more diverse and innovative future.</p>
+    </div>
+
+    <script>
+        function joinCommunity() {
+            let email = prompt("Enter your email to join our community:");
+            if (email) {
+                alert(`Thank you for joining us, ${email}! Welcome to Tram Technologies.`);
+            } else {
+                alert("You have cancelled the joining process.");
+            }
+        }
+    </script>
+</body>
+</html>
